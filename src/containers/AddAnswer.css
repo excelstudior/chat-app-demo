@@ -1,0 +1,22 @@
+.flex-box {
+    display: flex;
+    margin: 10px auto;
+    width: 85%;
+    justify-content: space-between;
+}
+.text-box {
+    margin: 0;
+    width: 92%;
+    border: 1px solid #EEEEEE;
+    color: black;
+    border-radius: 7px;
+    text-indent: 5px;
+    padding: 5px;
+}
+
+.button {
+    padding: 0;
+    width: 6%;
+    border: none;
+    background-color: transparent;
+}

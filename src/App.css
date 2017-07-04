@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+  margin: 20px auto;
+  background-image: url('./images/iphone.png');
+  background-position: center;
+  background-repeat: repeat-y;
+  height: 804px;
+  width: 393px;
+}
+
+.App-header {
+  height: 95px;
+}
+
+.App-content {
+  height: 620px;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 10%;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

@@ -1,0 +1,88 @@
+.scroll {
+    margin-top: 10px;
+    height: 90%;
+    overflow-y: auto;
+}
+.message-board {
+    margin: 10px auto;
+    padding: 10px;
+    width: 86%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #EEEEEE;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+}
+
+.left .avatar {
+    margin-right: 5px;
+    background-image: url('../images/robot.png');
+}
+
+.right .avatar {
+    margin-left: 5px;
+    background-image: url('../images/customer.png');
+}
+
+.messsage {
+    border: 1px solid #CAD5E0;
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.messsage::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+    width: 5px;
+    height: 5px;
+    border-right:1px solid #CAD5E0;
+    border-bottom:1px solid #CAD5E0;
+}
+
+.right .messsage::before {
+    right:-4px;
+    -moz-transform:rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+    background: #B2E281;
+}
+
+.left .messsage::before {
+    left:-4px;
+    -moz-transform:rotate(135deg);
+    -webkit-transform:rotate(135deg);
+    background: #FFFFFF;
+}
+
+.right .messsage {
+    background-color: #B2E281;
+}
+
+.left .messsage {
+    background-color: #FFFFFF;
+}
+
+.left, .right {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    text-align: left;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.right {
+    text-align: right;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
